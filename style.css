@@ -1,105 +1,92 @@
+::selection {
+    color: black;
+    background-color: white;
+}
+
+::-moz-selection {
+    color: black;
+    background-color: white;
+}
+
 body {
-  font-family: "Roboto Mono", monospace;
-  min-height: 600px;
-  background-image: url("");
-  background-color: #100848;
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+    font-family: "Roboto Mono", monospace;
+    background-color: #100848;
+    color: white;
+    margin-top: 30px;
 }
 
-.containerdiv {
-  text-align: center;
-  padding: 20px;
-  height: 100px;
+header {
+    text-align: center;
 }
 
-.requestdiv {
-  text-align: center;
-  padding: 20px;
-  height: 225px;
-  background: #4C3A6E;
-  margin: auto;
-  margin-top: 100px;
-  width:500px;
+h1 {
+    background-color: #4C3A6E;
+    width: fit-content;
+    margin: auto;
 }
 
-.page-title {
-  color: #ffffff;
-  margin: auto;
-  background: #4C3A6E;
-  width: fit-content;
-}
-
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 16px;
-}
-
-.page-logo {
-  width: 200px;
-}
-
-.alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.github {
-  width: 35px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-@media (max-height: 500px) {
-  body {
-    min-height: 800px;
-  }
+main {
+    background-color: #4C3A6E;
+    width: 550px;
+    height: 275px;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
 }
 
 input {
-  margin: 4px;
-  padding: 6px;
-  border-radius: 0px;
-  border: none;
+    height: 2em;
+    border: none;
+}
+
+input:focus {
+    outline-style: solid;
+    outline-color: #100848;
+    outline-width: 2px;
 }
 
 button {
-  margin-top: 12px;
-  padding: 8px 17px;
-  border-radius: 10px;
-  background: #C39EBA;
-  border: none;
-  display: inline-block;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 1px;
-  opacity: 1;
-}
-
-.resultado {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 16px;
-}
-
-.request {
-  color: white;
+    background-color: #C39EBA;
+    border:none;
+    padding: 8px 15px 8px 15px;
+    color:white;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
-body:next {
-  display: none;
-  content: url("https://raw.githubusercontent.com/gist/gabscrobson/6ef4beab848681a3055c58bf77b0b233/raw/fc1a1d893b59b8b90b983566005ff3c4c2bd7920/imersaodevmistery3.svg");
+footer{
+    text-align: center;
+    margin-top: 27vh;
 }
 
-.page-logo:hover {
-  content: url("https://raw.githubusercontent.com/gist/gabscrobson/6ef4beab848681a3055c58bf77b0b233/raw/fc1a1d893b59b8b90b983566005ff3c4c2bd7920/imersaodevmistery3.svg")
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: #C39EBA;
+    color: black;
+}
+
+hr {
+    width: 30%;
+}
+
+@media all and (max-width: 600px){   
+    main {
+        width: 90vw;
+    }
+}
+
+@media all and (max-width: 800px) {
+    hr {
+        width: 240px;
+    }
 }
