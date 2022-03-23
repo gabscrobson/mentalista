@@ -1,47 +1,41 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
-
-  <title>
-    Mentalista / gabsc
-  </title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  
-
+    <title>Mentalista</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    
 </head>
 
 <body>
-  
-  <div class="containerdiv">
-    <h1 class="page-title">
-      Mentalista
-    </h1>
-    <p class="page-subtitle">
-      Adivinhe o número secreto
-    </p>
-    <img src="https://raw.githubusercontent.com/gist/gabscrobson/6ef4beab848681a3055c58bf77b0b233/raw/f63169f3f765d19f8780d11bc192d79c30a70245/imersaodevmistery2.svg" class="page-logo" alt=""><br>
-  </div>
 
-  <div class="requestdiv">
-    <p class="request">
-      Digite um número de 0 a 10
-    </p>
-    <input type="number" id="valor" /><br>
-    <button type="submit" onclick="Chutar()">Chutar</button>
-    <button type="submit" onclick= "Resetar()">Resetar</button>
-    <h2 class="resultado" id="resultado">Bem vindo!</h2>
-    <h3 class="resultado" id="tentativas"></h3>
-  </div>
-  
-  <div class="linksdiv">
-    <a href="https://alura.com.br/" target="_blank">
-      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
-    <a href="https://github.com/gabscrobson" target="_blank">
-      <img src="https://www.alcantaradevelopment.com/static/media/githublogowhite.779520a2.png" alt="" class="github">
-    </a>
-  </div>
-  <script src="main.js"></script>
+    <!-- ------- Header ------- -->
+    <header>
+        <h1>Mentalista</h1>
+        <p>Adivinhe o número secreto</p>
+    </header>
+
+    <!-- ------- Main content ------- -->
+    <main>
+        <p>Digite um número de 0 a 10</p>
+        <input type="number" id="valor">
+        <br>
+        <button type="submit" onclick="Chutar()">Chutar</button>
+        <button type="submit" onclick="Resetar()">Resetar</button>
+        <h2 id="resultado">Bem vindo!</h2>
+        <h3 id="tentativas">Tentativas: 3</h3>
+    </main>
+
+    <!-- ------- Footer ------- -->
+    <footer>
+        <hr>
+        <p>@ 2022 <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">github/gabsc</a></p>
+    </footer>
+
+    <!-- ------- Script ------- -->
+    <script src="script.js"></script>
 </body>
 
 </html>
