@@ -77,6 +77,9 @@ a:hover {
 
 hr {
     width: 30%;
+    border: none;
+    height: 2px;
+    background-color: white;
 }
 
 @media all and (max-width: 600px){   
